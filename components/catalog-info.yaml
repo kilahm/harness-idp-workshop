@@ -40,7 +40,7 @@ metadata:
     ## Jira plugin - End
   tags:
     - kilahm
-    - test repo
+    - test-repo
 spec:
   type: service
   owner: change-value
