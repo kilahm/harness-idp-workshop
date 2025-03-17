@@ -1,14 +1,16 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: yournamehere-service
+  name: isaac-service-test
   description: |
-    My Example service which has something to do with APIs and database.
+    My backend api
   links:
     - title: Website
       url: http://harness.io
+    - title: GHA
+      url: https://github.com/kilahm/harness-idp-workshop/actions
   annotations:
-    github.com/project-slug: harnessworkshop/idp-workshop
+    github.com/project-slug: kilahm/harness-idp-workshop
     backstage.io/techdocs-ref: dir:../
     lighthouse.com/website-url: https://harness.io
     #For Harness CI/CD plugins - Start
@@ -34,16 +36,15 @@ metadata:
     #pagerduty.com/service-id: PGXMVMC
     ## Pagerduty Plugin - End
     ## Jira plugin - Start
-    #jira/project-key: IDP
+    jira/project-key: IDP
     ## Jira plugin - End
   tags:
-    - yournamehere
+    - kilahm
+    - test repo
 spec:
   type: service
   owner: change-value
-  lifecycle: experimental
-  consumesApis:
-    - spotify
+  lifecycle: production
   providesApis:
     - petstore
 #  system: yournamehere-system
