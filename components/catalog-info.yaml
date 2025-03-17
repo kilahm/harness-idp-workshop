@@ -47,7 +47,7 @@ spec:
   lifecycle: production
   providesApis:
     - petstore
-#  system: yournamehere-system
-#  dependsOn:
-#    - component:default/yournamehere-service
+  system: kilahm-system
+  dependsOn:
+    - component:default/ah-catalog
 
