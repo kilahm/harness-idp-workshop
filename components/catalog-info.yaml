@@ -43,7 +43,7 @@ metadata:
     - test-repo
 spec:
   type: service
-  owner: change-value
+  owner: default
   lifecycle: production
   providesApis:
     - petstore
